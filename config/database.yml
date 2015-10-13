@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: biocloud_dev
+  pool: 5
+  host: localhost
+  port: 5432  
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: biocloud_test
+  pool: 5
+  host: localhost
+  port: 5432  
