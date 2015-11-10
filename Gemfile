@@ -10,8 +10,6 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'pry'
 gem 'quiet_assets', '~> 1.1'
-# gem 'aws-sdk', '~> 2'
-# gem 'aws-s3', '~> 0.6.3'
 gem 's3'
 
 group :development do
