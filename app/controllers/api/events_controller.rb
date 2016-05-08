@@ -12,8 +12,8 @@ class Api::EventsController < ApplicationController
   end
 
   def create
-    bio_event = BioEvent.new(info: params['bio_event']['info'])
-    base_64_image_data = URI.unescape(params['bio_event']['image_data'])
+    bio_event = BioEvent.new(info: params['event']['info'])
+    base_64_image_data = URI.unescape(params['event']['image_data'])
     raw_image_data = Base64.decode64(base_64_image_data)
     foto = BIO_STREAM_BUCKET.objects.build foto_file_name
     foto.content = raw_image_data
